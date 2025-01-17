@@ -11,7 +11,15 @@ public class Main {
             for (int row = 0; row < array.length; row++){
                 colSum += array[row][col];
             }
-            System.out.println(colSum);
+            System.out.println("Sum of column " + (col + 1) + ": " + colSum);
+        }
+
+        for (int row = 0; row < array[0].length; row++) {
+            int rowSum = 0;
+            for (int col = 0; col < array.length; col++) {
+                rowSum += array[row][col];
+            }
+            System.out.println("Sum of row " + (row + 1) + ": " + rowSum);
         }
     }
 }
